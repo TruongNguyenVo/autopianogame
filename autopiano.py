@@ -14,8 +14,11 @@ import win32api, win32con
 # X:  407 Y:  450 RGB: ( 92,  94, 118)
 
 # X:  489 Y:  450 RGB: ( 91,  93, 118)
+print('Start! ')
+print('If you want to end, press q')
 def click(x,y):
     win32api.SetCursorPos((x,y))
+    
     win32api.mouse_event(win32con.MOUSEEVENTF_LEFTDOWN,0,0)
     #tốc độ click của chuột
     time.sleep(0.1)
